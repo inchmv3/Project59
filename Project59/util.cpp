@@ -16,7 +16,9 @@ string convert(int matrix[N_SIZE][M_SIZE], int n, int m) {
 
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < m; j++) {
+		s += to_string(matrix[i][0]);
+
+		for (int j = 1; j < m; j++) {
 			s += " " + to_string(matrix[i][j]);
 		}
 		s += "\n";
