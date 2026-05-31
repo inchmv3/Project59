@@ -10,15 +10,16 @@ int main() {
 		system("cls");
 		cout << "input size's : n and m: \n";
 		cin >> n >> m;
-	} while (n <=0 || m <=0 || n != m);
+	} while (n <= 0 );
 
-	init(matrix, n, m, 10, 99);
+	init(matrix, n, n, 10, 99);
 
-	print("matrix: \n" + convert(matrix, n, m));
+	print("matrix: \n" + convert(matrix, n, n));
 
-	int sum = sum_diag_elem(matrix, n, m);
+	int sum = sum_add_diag_elem(matrix, n, n);
 
 	print("\n sum: " + to_string(sum) + "\n");
+
 
 	return 0;
 }
